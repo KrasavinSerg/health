@@ -2,7 +2,12 @@ $header-color: #ffffff;
 $main-color: #60759d;
 $bg-color: #fafaff;
 $btn-bg-color: #e70067;
+$function-bg-color: #f1f4fc;
+$specialist-bg-color: #f1f4fc;
+$offer-bg-color: #e3e7f4;
 $footer-bg-color: #39649d;
+$main-font: "CeraRoundPro", "Arial", sans-serif;
+$second-font: "Geometria", "Arial", sans-serif;
 
 @font-face {
   font-family: "CeraRoundPro";
@@ -60,7 +65,7 @@ body {
   padding: 0;
   color: $main-color;
   background-color: $bg-color;
-  font-family: "CeraRoundPro", "Arial", sans-serif;
+  font-family: $main-font;
   min-width: 320px;
 }
 
@@ -77,8 +82,9 @@ body {
   }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .header {
+
     &__container {
       max-width: 960px;
       padding-left: 15px;
@@ -189,8 +195,9 @@ body {
   background-color: #ffffff;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .header-top {
+
     &__nav {
       width: 400px;
       margin-right: 10px;
@@ -204,7 +211,7 @@ body {
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .header-top {
     flex-direction: column;
 
@@ -278,6 +285,7 @@ body {
     margin: 0 auto;
     margin-bottom: 163px;
     padding: 20px 0;
+    font-family: $second-font;
     font-size: 16px;
     line-height: 24px;
     color: $header-color;
@@ -457,7 +465,7 @@ body {
 
 .function {
   border-radius: 70% 70% 0px 0px / 120px 120px 0px 0px;
-  background-color: #f1f4fc;
+  background-color: $function-bg-color;
 
   &__container {
     position: relative;
@@ -513,7 +521,7 @@ body {
   }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .function {
 
     &__container {
@@ -522,7 +530,7 @@ body {
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .function {
 
     &__container {
@@ -667,7 +675,7 @@ body {
 
 .specialist {
   position: relative;
-  background-color: #f1f4fc;
+  background-color: $specialist-bg-color;
   
   &__container {
     max-width: 1160px;
@@ -758,7 +766,7 @@ body {
 }
 
 .offer {
-  background-color: #e3e7f4;
+  background-color: $offer-bg-color;
 
   &__container {
     max-width: 1160px;
@@ -795,7 +803,7 @@ body {
   &__input {
     width: 360px;
     padding: 18px 20px;
-    font-family: "CeraRoundPro", "Arial", sans-serif;
+    font-family: $main-font;
     font-size: 16px;
     line-height: 24px;
     background-color: transparent;
@@ -810,7 +818,7 @@ body {
   }
   
   ::placeholder {
-    font-family: "CeraRoundPro", "Arial", sans-serif;
+    font-family: $main-font;
     font-size: 14px;
     font-weight: 300;
     color: #a8b2bf;
